@@ -15,7 +15,7 @@
             <img src="/assets/about-chin.png" id="info_btn"  onClick="goInfo();" style="height:40px"/>
       </div>
       </div>
-        <iframe id="myframe" src="https://hklit.lib.cuhk.edu.hk/" frameborder="0" 
+        <iframe id="myframe" src="https://hklit.lib.cuhk.edu.hk/lovf-index/" frameborder="0" 
         sandbox="allow-same-origin allow-scripts allow-popups allow-forms" 
             onLoad="pageLoaded(this);"
         >
@@ -62,23 +62,23 @@
             `
             style.type = 'text/css';
             const  css = `
-                // .page-content > .side-bar-widget.bulma, button[data-for="downloadButton"] {
-                //     display: none !important;
-                // }
-                // .side-bar-widget + .flex-fill {
-                //     margin: 0 auto;
-                //     width: 823px!important;
-                // }
+                .page-content > .side-bar-widget.bulma, button[data-for="downloadButton"] {
+                    display: none !important;
+                }
+                .side-bar-widget + .flex-fill {
+                    margin: 0 auto;
+                    width: 823px!important;
+                }
                 .page-id-6419 .flex-fill {
                     // transform:scale(1.4);
                 }
-                .page-content > .side-bar-widget.bulma .menu-list .menu-item:nth-child(n+4) {
-                    display: none !important;
-                }
-                .side-bar-widget + .flex-fill{
-                    width: 600px !important;
-                    flex: 1 0 auto !important;
-                }
+                // .page-content > .side-bar-widget.bulma .menu-list .menu-item:nth-child(n+4) {
+                //     display: none !important;
+                // }
+                // .side-bar-widget + .flex-fill{
+                //     width: 600px !important;
+                //     flex: 1 0 auto !important;
+                // }
                 `
             style.appendChild(document.createTextNode(css));
             body.appendChild(style)
@@ -103,7 +103,7 @@
             if(banner){
                 banner.innerHTML = `
                 <header id="appHeader">
-                    <img src="http:localhost:3000/assets/banner.svg" alt="headerBanner">
+                    <img src="/assets/banner.svg" alt="headerBanner">
                 </header> 
                 `
             }else{
