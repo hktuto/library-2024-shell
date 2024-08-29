@@ -12,8 +12,8 @@
       </header> -->
       <div id="infoButton" class="ready">
             
-            <img src="/assets/home.png" id="home_btn" onClick="goHome();" style="height:40px"/>
-            <img src="/assets/back.png" id="back_btn" onClick="goBack()" style="height:40px" />
+            <img src="https://library-2024-shell.vercel.app/assets/home.png" id="home_btn" onClick="goHome();" style="height:40px"/>
+            <img src="https://library-2024-shell.vercel.app/assets/back.png" id="back_btn" onClick="goBack()" style="height:40px" />
       </div>
       </div>
         <iframe id="myframe" src="https://hklit.lib.cuhk.edu.hk/lovf-index/" frameborder="0" 
@@ -98,7 +98,7 @@
             body.appendChild(script);
             const bgimg = doc.querySelector(`img[usemap='#image-map']`);
             if(bgimg){
-                bgimg.src = "http:localhost:3000/assets/home_bg.svg";
+                bgimg.src = "https://library-2024-shell.vercel.app/assets/home_bg.svg";
                 showInfoButton = true
                 bgimg.setAttribute('width', '823');
                 bgimg.decode().then(() => {
@@ -129,7 +129,7 @@
             if(banner){
                 banner.innerHTML = `
                 <header id="appHeader">
-                    <img src="http:localhost:3000/assets/banner-01.png" alt="headerBanner">
+                    <img src="https://library-2024-shell.vercel.app/assets/banner-01.png" alt="headerBanner">
                 </header> 
                 `
             }else{
